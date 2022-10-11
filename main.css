@@ -1,0 +1,25 @@
+.container {
+    width: 400px;
+    height: 455px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: rgb(197, 189, 165);
+
+    text-align:center
+}
+
+.slider1{
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.rangeValue1{
+
+}
+
+.slider2 {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.rangeValue2{}
