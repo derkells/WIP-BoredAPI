@@ -13,8 +13,8 @@
     <div class="container">
         <div style="">How many people?</div>
         <div class="slider1">
-            <input type="range" min="1" max="10" value="5" oninput="rangeValue1.innerText = this.value">
-            <div id="rangeValue1">5</div>
+            <input onchange="sliderTest()" id= "firstSlider" type="range" min="1" max="5" value="1" oninput="rangeValue1.innerText = this.value">
+            <div id="rangeValue1">1</div>
         </div>
 
         <div>What is your budget?</div>
@@ -57,17 +57,19 @@
         </div>
 
         <div>
-            <button onclick="myFun()" id="submit" style="margin-top: 5px">I'm Bored!</button>
+            <button onclick="getSpecificActivity()" id="submit" style="margin-top: 5px">I'm Bored!</button>
         </div>
 
         <div>
-            <button id="random" style="margin-top:5px">Surprise me!</button>
+            <button onclick="getRandomActivity()" id="random" style="margin-top:5px">Surprise me!</button>
         </div>
 
         <div>
             <h2 id="output">
-
             </h2>
+        </div>
+        <div>
+            <button onClick="resetOutput()">Reset</button>
         </div>
     </div>    
 
