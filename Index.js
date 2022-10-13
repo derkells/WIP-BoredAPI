@@ -16,7 +16,7 @@ function resetOutput() {
 //Calls API and returns the json package for Random Activity
 const getRandomActivity = async () => {
     let response = String
-    const APIResponse = await fetch('http://www.boredapi.com/api/activity/');
+    const APIResponse = await fetch('https://www.boredapi.com/api/activity/');
     const givenResponse = await APIResponse.json();
     response = givenResponse.activity
 
@@ -32,7 +32,7 @@ function sliderTest() {
 const checkBoxes = async() => {
 
     let response1 = String
-    let APIAddress = `http://www.boredapi.com/api/activity?participants=${sliderTest()}`
+    let APIAddress = `https://www.boredapi.com/api/activity?participants=${sliderTest()}`
 
 
 
