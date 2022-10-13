@@ -17,50 +17,51 @@
             <div id="rangeValue1">1</div>
         </div>
 
-        <div>What is your budget?</div>
+        <!-- <div>What is your budget?</div>
         <div class="slider2">
             <input type="range" min="0" max="200" value="100" oninput="rangeValue2.innerText = this.value">
             <div id="rangeValue2">100</div>
-        </div>
+        </div> -->
 
         <div class = "container2">
             <div> What type of activity? </div>
 
-            <input type="checkbox" id="education" value="education">
+            <input type="checkbox" id="education" value="true">
             <label>Education</label><br>
             
-            <input type="checkbox" id="recreational" value="recreational">
+            <input type="checkbox" id="recreational" value="true">
             <label>Recreational</label><br>
 
-            <input type="checkbox" id="social" value="social">
+            <input type="checkbox" id="social" value="true">
             <label for="">Social</label><br>
 
-            <input type="checkbox" id="diy" value="diy">
+            <input type="checkbox" id="diy" value="true">
             <label for="">DIY</label><br>
 
-            <input type="checkbox" id="charity" value="charity">
+            <input type="checkbox" id="charity" value="true">
             <label for="">Charity</label><br>
 
-            <input type="checkbox" id="cooking" value="cooking">
+            <input type="checkbox" id="cooking" value="true">
             <label for="">Cooking</label><br>
 
-            <input type="checkbox" id="relaxation" value="relaxation">
+            <input type="checkbox" id="relaxation" value="true">
             <label for="">Relaxation</label><br>
 
-            <input type="checkbox" id="music" value="music">
+            <input type="checkbox" id="music" value="true">
             <label for="">Music</label><br>
 
-            <input type="checkbox" id="busywork" value="busywork">
+            <input type="checkbox" id="busywork" value="true">
             <label for="">Busywork</label><br>
 
 
         </div>
 
         <div>
-            <button onclick="getSpecificActivity()" id="submit" style="margin-top: 5px">I'm Bored!</button>
+            <button onclick="checkBoxes()" id="submit" style="margin-top: 5px">I'm Bored!</button>
         </div>
 
         <div>
+            <!-- <button onclick="getRandomActivity()" id="random" style="margin-top:5px">Surprise me!</button> -->
             <button onclick="getRandomActivity()" id="random" style="margin-top:5px">Surprise me!</button>
         </div>
 
