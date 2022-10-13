@@ -1,6 +1,16 @@
 //Reset button. Resets the output
 function resetOutput() {
-    document.getElementById("output").innerHTML = ""
+    document.getElementById("output").innerHTML = "";
+    document.querySelector("#education").checked = false;
+    document.querySelector("#recreational").checked = false;
+    document.querySelector("#social").checked = false;
+    document.querySelector("#diy").checked = false;
+    document.querySelector("#charity").checked = false;
+    document.querySelector("#cooking").checked = false;
+    document.querySelector("#relaxation").checked = false;
+    document.querySelector("#music").checked = false;
+    document.querySelector("#busywork").checked = false;
+
 }
 
 //Calls API and returns the json package for Random Activity
@@ -67,14 +77,15 @@ const checkBoxes = async() => {
     const givenResponse1 = await APIResponse1.json()
     response1 = givenResponse1.activity
 
+    if (response1 == undefined) {
+        response1 = "No results found"
+    }
 
     document.getElementById("output").innerHTML = response1
     console.log(givenResponse1.type)
     console.log(APIAddress)
 
     }
-
-
     //Problems I've had to solve:
     //Connecting the API: had to learn fetch/await
     //concatonating the APIAddress
