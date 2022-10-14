@@ -23,6 +23,7 @@ const getRandomActivity = async () => {
     document.getElementById("output").innerHTML = response
 }
 
+//Checks the value of the slider and returns it to be used when submitting.
 function sliderTest() {
     var test1 = parseInt(document.getElementById("firstSlider").value)
     console.log(test1)
@@ -86,6 +87,13 @@ const checkBoxes = async() => {
     console.log(APIAddress)
 
     }
+
+
+function info() {
+    alert("yes")
+}
+
+
     //Problems I've had to solve:
     //Connecting the API: had to learn fetch/await
     //concatonating the APIAddress
