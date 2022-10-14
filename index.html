@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
     
-    <title>Boredom Fixer</title>
+    <title style="width:fit-content;">Boredom Fixer</title>
     <script src="Index.js"></script>
 </head>
 <body>
@@ -29,9 +29,9 @@
             <input type="range" min="0" max="200" value="100" oninput="rangeValue2.innerText = this.value">
             <div id="rangeValue2">100</div>
         </div> -->
-
+        <div style="margin-bottom: 8px;"> <b> What type of activity?</b> </div>
         <div class = "container2">
-            <div> What type of activity? </div>
+            
 
             <input type="checkbox" id="education" value="true">
             <label>Education</label><br>
@@ -63,19 +63,25 @@
 
         </div>
 
-        <div>
-            <button onclick="checkBoxes()" id="submit" style="margin-top: 5px">I'm Bored!</button>
-        </div>
 
-        <div>
-            <!-- <button onclick="getRandomActivity()" id="random" style="margin-top:5px">Surprise me!</button> -->
-            <button onclick="getRandomActivity()" id="random" style="margin-top:5px">Surprise me!</button>
+
+        <div class="container3">
+            <div>
+                <button onclick="checkBoxes()" class="submit" id="submit" style="margin-top: 5px">I'm Bored!</button>
+            </div>
+
+            <div>
+                <!-- <button onclick="getRandomActivity()" id="random" style="margin-top:5px">Surprise me!</button> -->
+                <button onclick="getRandomActivity()" class = "random" id="random" style="margin-top:5px">Surprise me!</button>
         </div>
 
         <div>
             <h2 class="output" id="output">
             </h2>
         </div>
+        </div>
+
+
         <div>
             <button onClick="resetOutput()">Reset</button>
         </div>
